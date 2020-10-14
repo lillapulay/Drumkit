@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+  background: no-repeat bottom/80% url('drumkit.jpg');
+  background-size: cover;
+  background-position: fixed;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  min-height: 100%;
+}
+
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 90vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  border: .4rem solid rgb(65, 17, 17);
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(75, 9, 9, 0.26);
+  text-shadow: 0 0 .5rem rgb(65, 17, 17);
+}
+
+/* Keydown adds this class to the element - animation */
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc800cc;
+  box-shadow: 0 0 1rem #ffc800cc;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
+
+
+.ImgSrc,
+.ImgSrc a {
+  color: #ffc600;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+div.ImgSrc {
+  text-align: center;
+  margin: auto;
+  width: 200px;
+  margin-bottom: 10px;
+  border: 3px solid rgb(65, 17, 17);
+  padding: 5px;
+  border-radius: .4rem;
+  background: rgba(75, 9, 9, 0.26);
+  text-shadow: 0 0 .5rem rgb(65, 17, 17);
+}
